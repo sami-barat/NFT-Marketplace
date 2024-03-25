@@ -1,0 +1,113 @@
+.trending_content {
+  max-width: 1050px;
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending_content .title {
+  margin-top: 60px;
+  padding-bottom: 15px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.trending_content .description {
+  padding-bottom: 75px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.trending_content .gallery_row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.trending_content .gallery_row div {
+  flex-basis: 30%;
+}
+
+.img-g {
+  width: 100%;
+}
+
+.artist_name {
+  padding-top: 15px;
+}
+
+.trending_content .gallery_row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.trending_content .gallery_row > div {
+  flex-basis: calc(50% - 15px);
+}
+
+@media screen and (max-width: 900px) {
+  .trending_content {
+    padding: 0px 30px 0px 30px;
+  }
+
+  .trending_content .gallery_row > div:nth-child(3) {
+    display: none;
+  }
+
+  .trending_content .title {
+    font-size: 24px !important;
+  }
+
+  .trending_content .description {
+    font-size: 16px !important;
+  }
+
+  .trending_content .gallery_row {
+    font-size: 22px;
+  }
+
+  .gallery_row .img-g {
+    width: 280px;
+    height: 395px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .trending_content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trending_content .gallery_row > div:nth-child(2),
+  .trending_content .gallery_row > div:nth-child(3) {
+    display: none;
+  }
+
+  .trending_content .title {
+    font-size: 28px !important;
+  }
+
+  .trending_content .description {
+    font-size: 16px !important;
+  }
+
+  .trending_content .gallery_row {
+    font-size: 22px;
+  }
+
+  .gallery_row .img-g {
+    width: 280px;
+    height: 395px;
+  }
+}

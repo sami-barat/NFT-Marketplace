@@ -1,0 +1,84 @@
+.sub-wigdet {
+  height: 430px;
+  padding: 60px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  gap: 80px;
+}
+
+.sub-wigdet .weekly {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+}
+
+.inputWithButton {
+  display: flex;
+  padding-left: 20px;
+  width: 425px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.inputField {
+  height: 60px;
+  background: none;
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sub-wigdet {
+    height: 360px;
+    padding: 30px;
+    background-color: #3b3b3b;
+    border-radius: 20px;
+    gap: 20px;
+    margin: 0 20px;
+  }
+
+  .img-space {
+    width: 300px;
+    height: 280px;
+  }
+
+  .p-w {
+    font-size: 24px !important;
+  }
+
+  .p-g {
+    font-size: 16px !important;
+  }
+
+  .inputWithButton {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .button-sub {
+    gap: 5px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sub-wigdet {
+    flex-direction: column;
+    gap: 0;
+    background-color: #2b2b2b;
+  }
+
+  .sub-w {
+    margin-bottom: 80px;
+  }
+}

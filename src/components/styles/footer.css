@@ -1,0 +1,94 @@
+.footer-sec {
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #cccccc;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-sec p {
+  margin-bottom: 25px;
+}
+
+.sm-links {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sm-links:hover {
+  color: #ffffff;
+}
+
+.uls {
+  list-style: none;
+}
+.uls a {
+  text-decoration: none;
+  color: #cccccc;
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 25px;
+}
+
+.uls a:hover {
+  color: #ffffff;
+}
+
+.inputWithButton-fo {
+  display: flex;
+  width: 420px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.inputField-fo {
+  height: 60px;
+  background: none;
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+
+.hr-p {
+  width: 1050px;
+  margin: 0 auto;
+  color: #cccccc;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border-top: 1px solid #cccccc;
+  padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-sec {
+    flex-direction: column;
+  }
+
+  .img-f {
+    height: 32px;
+    width: 32px;
+  }
+
+  .inputWithButton-fo {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  .hr-p {
+    border: 0;
+    width: 300px;
+  }
+}

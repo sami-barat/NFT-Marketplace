@@ -1,0 +1,63 @@
+.discover_section {
+  max-width: 1050px;
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+  margin: 50px auto 70px auto;
+  padding: 0 20px;
+}
+
+.discover_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.informations {
+  width: calc(33.33% - 10px);
+  max-width: 320px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.informations:hover {
+  background-color: #4b4b4b;
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.informations img {
+  width: 100%;
+  height: auto;
+}
+
+.informations .avatar_image {
+  width: 24px;
+  height: 24px;
+}
+
+.informations > div {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .informations {
+    width: calc(50% - 10px);
+  }
+
+  .discover_cards .informations:nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .informations {
+    width: calc(100% - 10px);
+  }
+  .discover_cards .informations:nth-child(n + 3) {
+    display: block;
+  }
+  .discover_cards {
+    margin-left: 25px;
+  }
+}

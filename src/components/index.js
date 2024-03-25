@@ -1,0 +1,10 @@
+export { Navbar } from './Navbar';
+export { MainContent } from './main-content';
+export { TrendingCollection } from './trending-collection';
+export { TopCreators } from './top-creators';
+export { BrowseCategories } from './browse-categories';
+export { DiscoverNfts } from './discover-nfts';
+export { Highlight } from './highlight';
+export { HowItWorks } from './how-it-works';
+export { SubscribeWidget } from './subscribe-widget';
+export { Footer } from './footer';

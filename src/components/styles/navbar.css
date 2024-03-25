@@ -1,0 +1,145 @@
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.header nav {
+  background-color: #3b3b3b;
+}
+
+.header .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .link_list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.header .link_list_item {
+  color: #ffffff;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .link_list_item a.active_link,
+.header .link_list_item a:hover {
+  color: #a259ff;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.close_sidebar {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close_sidebar:hover {
+  text-decoration: underline;
+}
+
+.link_list.sidebar_open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #3b3b3b;
+  z-index: 1000;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link_list.sidebar_open li {
+  margin-bottom: 20px;
+}
+
+.sidebar_toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebar_toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .header .link_list {
+    display: none;
+  }
+
+  .link_list.sidebar_open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #3b3b3b;
+    z-index: 1000;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .link_list.sidebar_open li {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .sidebar_toggle {
+    display: block !important;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .header .link_list {
+    display: none;
+  }
+
+  .link_list.sidebar_open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  img {
+    width: 182.56px;
+    height: 24px;
+  }
+
+  button {
+    display: block !important;
+  }
+}
