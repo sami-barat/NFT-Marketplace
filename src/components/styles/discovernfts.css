@@ -6,6 +6,25 @@
   padding: 0 20px;
 }
 
+.discover_section .discover-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.discover-content .heading {
+  font-weight: 600;
+  font-size: 38px;
+  padding-bottom: 15px;
+}
+
+.discover-content .sub-heading {
+  font-weight: 400;
+  font-size: 22px;
+}
+
 .discover_cards {
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +55,29 @@
   height: 24px;
 }
 
+.discover_cards .informations .text-1 {
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.discover_cards .informations .text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  padding-left: 10px;
+}
+
 .informations > div {
   margin-top: 10px;
+}
+
+.discover_cards .informations .information-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 900px) {
