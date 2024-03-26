@@ -21,25 +21,17 @@ const Highlight = () => {
   return (
     <>
       <div style={backgroundStyle}>
-        <div
-          className="container high-nfts">
+        <div className="container high-nfts">
           <div style={{ position: "relative" }}>
             <div className="avatarStyle">
-              <img src={Avatar} style={{height: '24', width: '24px'}} alt="Avatar" />
+              <img
+                src={Avatar}
+                style={{ height: "24", width: "24px" }}
+                alt="Avatar"
+              />
               <p>Shroomie</p>
             </div>
-            <p className="mushroom"
-              style={{
-                fontFamily: "'Work Sans', sans-serif",
-                fontSize: "51px",
-                fontWeight: "600",
-                color: "#FFFFFF",
-                lineHeight: "56.1px",
-                margin: "0 0 30px 0",
-              }}
-            >
-              Magic Mushrooms
-            </p>
+            <p className="mushroom-text">Magic Mushrooms</p>
             <Button
               w={198}
               h={60}
@@ -59,17 +51,8 @@ const Highlight = () => {
             <p style={{ fontSize: "12px", fontWeight: "400" }}>
               Auction ends in:
             </p>
-            <p className="time" style={{ fontSize: "38px", fontWeight: "700" }}>
-              59 : 59 : 59
-            </p>
-            <div
-              style={{
-                display: "flex",
-                gap: "75px",
-                fontSize: "12px",
-                fontWeight: "400",
-              }}
-            >
+            <p style={{ fontSize: "38px", fontWeight: "700" }}>59 : 59 : 59</p>
+            <div className="texts-para">
               <p>Hours</p>
               <p>Minutes</p>
               <p>Seconds</p>

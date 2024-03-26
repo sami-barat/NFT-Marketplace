@@ -43,7 +43,7 @@ const DiscoverNfts = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "#2B2B2B", paddingTop: "100px" }}>
+      <div>
         <div className="discover_section container">
           <div className="discover-content">
             <div>

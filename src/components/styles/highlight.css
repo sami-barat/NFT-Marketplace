@@ -24,6 +24,15 @@
   margin-bottom: 10vh;
 }
 
+.high-nfts .mushroom-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 51px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 56.1px;
+  margin: 0 0 30px 0;
+}
+
 .auctionEndsStyle {
   background-color: #3b3b3b80;
   width: 355px;
@@ -33,6 +42,13 @@
   border-radius: 10px;
   color: #ffffff;
   font-family: "Space Mono", monospace;
+}
+
+.high-nfts .auctionEndsStyle .texts-para {
+  display: flex;
+  gap: 75px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 900px) {
@@ -47,8 +63,8 @@
     padding: 10px;
   }
 
-  .mushroom {
-    font-size: 38px !important;
+  .high-nfts .mushroom-text {
+    font-size: 38px;
   }
 }
 
@@ -64,8 +80,8 @@
     margin: 0 0 10px 0;
   }
 
-  .mushroom {
-    margin: 0px 0px 5px 0px !important;
+  .high-nfts .mushroom-text {
+    margin: 0px 0px 5px 0px;
   }
 
   .auctionEndsStyle {
