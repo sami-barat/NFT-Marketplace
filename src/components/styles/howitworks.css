@@ -1,3 +1,9 @@
+.how-it-works-section {
+  max-width: 1050px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
 .text_boxes {
   display: flex;
   justify-content: space-between;
@@ -12,12 +18,14 @@
   text-align: center;
   color: #ffffff;
   font-family: "Work Sans", sans-serif;
+  transition: transform 0.3s;
 }
 
 .how-it-works-item:hover {
   background-color: #4b4b4b;
   box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  transform: scale(0.95);
 }
 
 .how-it-works-item img {

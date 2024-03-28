@@ -29,8 +29,8 @@ const HowItWorks = () => {
 
   return (
     <>
-      <div style={{backgroundColor: "#2B2B2B", height: "738px"}}>
-        <div className="container" style={{ maxWidth: "1050px", paddingTop: "80px" }}>
+      <div>
+        <div className="how-it-works-section container">
           <div style={{
             fontFamily: "'Work Sans', sans-serif",
             color: '#FFFFFF',

@@ -73,7 +73,7 @@ const BrowseCategories = () => {
     ];
 
     return (
-        <div style={{backgroundColor: "#2B2B2B", marginTop: '90px'}}>
+        <div style={{marginTop: '90px'}}>
             <div className='category_section container'>
                 <div>
                     <p className='b-title'>Browse Categories</p>

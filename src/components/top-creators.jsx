@@ -86,8 +86,8 @@ const TopCreators = () => {
             <div className='creator_section container'>
                 <div className='div-top'>
                     <div className='top-creators-info'>
-                        <p className='p1'>Top Creators</p>
-                        <p className='p2'>Checkout Top Rated Creators on the NFT Marketplace</p>
+                        <p className='heading'>Top Creators</p>
+                        <p className='sub-head1'>Checkout Top Rated Creators on the NFT Marketplace</p>
                     </div>
                     <Button
                         w={247}

@@ -26,6 +26,14 @@
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 22px;
+  transition: transform 0.3s;
+}
+
+.creator_card:hover {
+  background-color: #4b4b4b;
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transform: scale(0.95);
 }
 
 
@@ -43,13 +51,13 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.div-top .top-creators-info .p1 {
+.div-top .top-creators-info .heading {
   font-weight: 600;
   font-size: 38px;
   padding-bottom: 20px;
 }
 
-.div-top .top-creators-info .p2 {
+.div-top .top-creators-info .sub-head {
   font-weight: 400;
   font-size: 22px;
 }
@@ -68,11 +76,7 @@
 }
 
 
-.creator_card:hover {
-  background-color: #4b4b4b;
-  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-}
+
 
 .card_number {
   position: absolute;
@@ -112,6 +116,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
+    max-width: 740px;
+    margin: 0 auto;
   }
 
   .creator_card {
@@ -132,11 +138,11 @@
     text-align: start;
   }
 
-  .top-creators-info .p1 {
+  .top-creators-info .heading {
     font-size: 28px ;
   }
 
-  .top-creators-info .p2 {
+  .top-creators-info .sub-head {
     font-size: 14px ;
   }
 
@@ -193,12 +199,12 @@
     text-align: start;
   }
 
-  .top-creators-info .p1 {
+  .top-creators-info .heading {
     font-size: 24px ;
   }
 
-  .top-creators-info .p2 {
-    font-size: 11px ;
+  .top-creators-info .sub-head1 {
+    font-size: 14px ;
     padding-bottom: 20px;
   }
 

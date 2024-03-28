@@ -8,11 +8,8 @@ import { Button } from "./button";
 const SubscribeWidget = () => {
   return (
     <>
-      <div className="sub-w" style={{ height: "550px", paddingTop: '35px'  }}>
-        <div
-          className="sub-wigdet container"
-          style={{ maxWidth: "1050px", display: "flex",  }}
-        >
+      <div className="sub-w">
+        <div className="sub-wigdet container">
           <div>
             <img className="img-space" src={Photo} alt="NFT's" />
           </div>

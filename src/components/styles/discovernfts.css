@@ -29,6 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .informations {
@@ -37,12 +38,14 @@
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: #3b3b3b;
+  transition: transform 0.3s;
 }
 
 .informations:hover {
   background-color: #4b4b4b;
   box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  transform: scale(0.95);
 }
 
 .informations img {
@@ -81,8 +84,14 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .discover_cards {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .informations {
-    width: calc(50% - 10px);
+    width: calc(50% - 30px);
+    gap: 0;
   }
 
   .discover_cards .informations:nth-child(n + 3) {
@@ -98,6 +107,6 @@
     display: block;
   }
   .discover_cards {
-    margin-left: 25px;
+    margin-left: 16px;
   }
 }

@@ -17,11 +17,27 @@
 .sm-links {
   display: flex;
   gap: 10px;
+}
+
+.sm-links a {
+  color: #858584;
   cursor: pointer;
 }
 
-.sm-links:hover {
-  color: #ffffff;
+.sm-links .discord:hover {
+  color: RGB(114, 137, 218);
+}
+
+.sm-links .youtube:hover {
+  color: RGB(255 0 0);
+}
+
+.sm-links .twitter:hover {
+  color: RGB(29 161 242);
+}
+
+.sm-links .instagram:hover {
+  color: #e4405f;
 }
 
 .uls {

@@ -42,26 +42,22 @@ const Footer = () => {
           <p>NFT marketplace UI created <br />with Anima for Figma.</p>
           <p>Join our community</p>
           <div className="sm-links">
-            <PiDiscordLogo
+            <a className="discord"><PiDiscordLogo
               size={32}
-              color="#858584"
               onClick={handleDiscordClick}
-            />
-            <PiYoutubeLogo
+            /></a>
+            <a className="youtube"><PiYoutubeLogo
               size={32}
-              color="#858584"
               onClick={handleYoutubeClick}
-            />
-            <PiTwitterLogo
+            /></a>
+            <a className="twitter"><PiTwitterLogo
               size={32}
-              color="#858584"
               onClick={handleTwitterClick}
-            />
-            <PiInstagramLogo
+            /></a>
+            <a className="instagram"><PiInstagramLogo
               size={32}
-              color="#858584"
               onClick={handleInstagramClick}
-            />
+            /></a>
           </div>
         </div>
         <div>

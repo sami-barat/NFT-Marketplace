@@ -27,12 +27,14 @@
   text-align: start;
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s;
 }
 
 .category-card:hover {
   background-color: #4b4b4b;
   box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  transform: scale(0.95);
 }
 
 .icon-overlay {
@@ -75,13 +77,14 @@
 
 @media (max-width: 430px) {
   .category_section {
-    margin: 0px 20px 0px 20px;
+    margin:0;
+    padding: 0;
   }
 
   .category-card p {
     font-size: 12px;
   }
-  .Category_cards {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+
+  
 }
+

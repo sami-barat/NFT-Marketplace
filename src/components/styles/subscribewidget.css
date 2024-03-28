@@ -1,9 +1,12 @@
 .sub-wigdet {
+  max-width: 1050px;
+  display: flex;
   height: 430px;
   padding: 60px;
   background-color: #3b3b3b;
   border-radius: 20px;
   gap: 80px;
+  margin-bottom: 50px;
 }
 
 .sub-wigdet .weekly {
@@ -75,6 +78,7 @@
     flex-direction: column;
     gap: 0;
     background-color: #2b2b2b;
+    height: 500px;
   }
 
   .sub-w {
