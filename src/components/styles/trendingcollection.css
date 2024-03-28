@@ -54,12 +54,62 @@
   flex-basis: calc(50% - 15px);
 }
 
+.row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.image-container {
+  perspective: 1000px;
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 330px;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: translateZ(-30px); /* Move image backwards on the Z-axis */
+}
+
+.image-sub {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  transform-style: preserve-3d; /* Ensure child elements are transformed in 3D space */
+}
+
+.image-sub img {
+  transition: transform 0.3s ease;
+}
+
+.image-sub img:hover {
+  transform: translateZ(-30px); /* Move image backwards on the Z-axis */
+}
+
 @media screen and (max-width: 900px) {
   .trending_content {
     padding: 0px 30px 0px 30px;
   }
 
-  .trending_content .gallery_row > div:nth-child(3) {
+  .trending_content .row-container > div:nth-child(3) {
     display: none;
   }
 
@@ -83,16 +133,42 @@
 
 @media screen and (max-width: 430px) {
   .trending_content {
-    max-width: 100%;
+    /* max-width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .trending_content .gallery_row > div:nth-child(2),
-  .trending_content .gallery_row > div:nth-child(3) {
+  .trending_content .row-container > div:nth-child(2),
+  .trending_content .row-container > div:nth-child(3) {
     display: none;
   }
+
+  .image-container {
+    width: 315px;
+    height: auto;
+  }
+
+  .placeholder {
+    height: 315px;
+    width: 315px;
+  }
+
+  .img1 {
+    height: 95px;
+    width: 95px;
+  }
+
+  .img2 {
+    height: 95px;
+    width: 95px;
+  }
+
+  .img3 {
+    height: 95px;
+    width: 95px;
+  }
+
 
   .trending_content .title {
     font-size: 28px !important;
