@@ -90,6 +90,8 @@
     margin-right: 10px;
   }
 
+  
+
   .header .link_list {
     display: none;
   }
@@ -97,7 +99,7 @@
   .link_list.sidebar_open {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 200px;
@@ -114,6 +116,7 @@
 }
 
 @media only screen and (max-width: 430px) {
+
   .sidebar_toggle {
     display: block !important;
     background: none;
@@ -131,7 +134,7 @@
   .link_list.sidebar_open {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    height: 100%;
   }
 
   img {

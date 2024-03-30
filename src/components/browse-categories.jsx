@@ -26,49 +26,49 @@ const BrowseCategories = () => {
             id: 1,
             name: "Art",
             image: Image1,
-            icon: <PiPaintBrush style={{ width: '100px', height: '100px' }} />
+            icon: <PiPaintBrush size={100} />
         },
         {
             id: 2,
             name: "Music",
             image: Image2,
-            icon: <PiSwatches style={{ width: '100px', height: '100px' }} />
+            icon: <PiSwatches size={100} />
         },
         {
             id: 3,
             name: "Photography",
             image: Image3,
-            icon: <PiMusicNotes style={{ width: '100px', height: '100px' }} />
+            icon: <PiMusicNotes size={100} />
         },
         {
             id: 4,
             name: "Design",
             image: Image4,
-            icon: <PiCamera style={{ width: '100px', height: '100px' }} />
+            icon: <PiCamera size={100} />
         },
         {
             id: 5,
             name: "Fashion",
             image: Image5,
-            icon: <PiVideoCamera style={{ width: '100px', height: '100px' }} />
+            icon: <PiVideoCamera size={100} />
         },
         {
             id: 6,
             name: "Crafts",
             image: Image6,
-            icon: <PiMagicWand style={{ width: '100px', height: '100px' }} />
+            icon: <PiMagicWand size={100} />
         },
         {
             id: 7,
             name: "Cooking",
             image: Image7,
-            icon: <PiBasketball style={{ width: '100px', height: '100px' }} />
+            icon: <PiBasketball size={100} />
         },
         {
             id: 8,
             name: "Literature",
             image: Image8,
-            icon: <PiPlanet style={{ width: '100px', height: '100px' }} />
+            icon: <PiPlanet size={100} />
         },
     ];
 

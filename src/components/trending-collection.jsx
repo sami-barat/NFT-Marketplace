@@ -32,37 +32,37 @@ const TrendingCollection = () => {
               <p className="description">Checkout our weekly updated trending collection.</p>
             </div>
 
-            <div class="row-container">
-              <div class="image-container">
-                <img class="placeholder" src={animalsmain} alt="Your Image" />
-                <div class="image-sub">
-                  <img class="img1" src={animalsub1} alt="Image"/>
-                  <img class="img2" src={animalsub2} alt="Image"/>
-                  <img class="img3" src={NumberNFTs} alt="NFT Count" />
+            <div className="row-container">
+              <div className="image-container">
+                <img className="placeholder" src={animalsmain} alt="Your Image" />
+                <div className="image-sub">
+                  <img className="img1" src={animalsub1} alt="Image"/>
+                  <img className="img2" src={animalsub2} alt="Image"/>
+                  <img className="img3" src={NumberNFTs} alt="NFT Count" />
                 </div>
                 <div className='ar-text'>
                   <p className="artist_name">DSGN Animals</p>
                   <img src={ArtistCard} alt="Artists" className="artist_card"/>
                 </div>
               </div>
-              <div class="image-container">
-                <img class="placeholder-SUE7x0" src={mushroommain} alt="Your Image" />
-                <div class="image-sub">
-                  <img class="img1" src={mushroomsub1} alt="Image"/>
-                  <img class="img2" src={mushroomsub2} alt="Image"/>
-                  <img class="img3" src={NumberNFTs} alt="NFT Count" />
+              <div className="image-container">
+                <img className="placeholder-SUE7x0" src={mushroommain} alt="Your Image" />
+                <div className="image-sub">
+                  <img className="img1" src={mushroomsub1} alt="Image"/>
+                  <img className="img2" src={mushroomsub2} alt="Image"/>
+                  <img className="img3" src={NumberNFTs} alt="NFT Count" />
                 </div>
                 <div className='ar-text'>
                   <p className="artist_name">DSGN Animals</p>
                   <img src={ArtistCard2} alt="Artists" className="artist_card"/>
                 </div>
               </div>
-              <div class="image-container">
-                <img class="placeholder-SUE7x0" src={robotmain} alt="Your Image" />
-                <div class="image-sub">
-                  <img class="img1" src={robotsub1} alt="Image"/>
-                  <img class="img2" src={robotsub2} alt="Image"/>
-                  <img class="img3" src={NumberNFTs} alt="NFT Count" />
+              <div className="image-container">
+                <img className="placeholder-SUE7x0" src={robotmain} alt="Your Image" />
+                <div className="image-sub">
+                  <img className="img1" src={robotsub1} alt="Image"/>
+                  <img className="img2" src={robotsub2} alt="Image"/>
+                  <img className="img3" src={NumberNFTs} alt="NFT Count" />
                 </div>
                 <div>
                   <p className="artist_name">DSGN Animals</p>

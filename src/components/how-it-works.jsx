@@ -31,11 +31,7 @@ const HowItWorks = () => {
     <>
       <div>
         <div className="how-it-works-section container">
-          <div style={{
-            fontFamily: "'Work Sans', sans-serif",
-            color: '#FFFFFF',
-            paddingBottom: "50px",
-          }}>
+          <div>
             <p style={{fontWeight: "600", fontSize: "38px", paddingBottom: "20px"}}>How It Works</p>
             <p style={{ fontWeight: "400", fontSize: "22px"}}>Find Out How To Get Started</p>
           </div>
@@ -44,8 +40,8 @@ const HowItWorks = () => {
               <div className="how-it-works-item" key={item.id}>
                 <img src={item.image} alt={item.heading} />
                 <div className="aa">
-                  <p className="p1" style={{fontWeight: '600', fontSize: '22px', paddingBottom: '10px'}}>{item.heading}</p>
-                  <p className="p2" style={{ fontWeight: '400', fontSize: '16px'}}>{item.text}</p>
+                  <p className="p-heading">{item.heading}</p>
+                  <p className="p-text">{item.text}</p>
                 </div>
               </div>
             ))}

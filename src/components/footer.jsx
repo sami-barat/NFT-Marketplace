@@ -28,15 +28,10 @@ const Footer = () => {
   };
 
   return (
-    <footer style={{ backgroundColor: "#3B3B3B" , }}>
+    <footer>
       <div className="footer-sec container">
-        <div style={{padding: '0px 0px 0px 0px', gap: '30px'}}>
-          <p style={{
-            fontFamily: '"Space Mono", monospace',
-            fontWeight: '700',
-            fontSize: '22px',
-            color: '#FFFFFF'
-          }}>
+        <div>
+          <p className="branding">
             <img className="img-f" src={Storefront} alt="store_logo" /> NFT Marketplace
           </p>
           <p>NFT marketplace UI created <br />with Anima for Figma.</p>
@@ -61,12 +56,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p style={{
-            fontFamily: '"Space Mono", monospace',
-            fontWeight: '700',
-            fontSize: '22px',
-            color: '#FFFFFF'
-          }}>Explore</p>
+          <p className="explore">Explore</p>
           <ul className="uls">
             <li>
               <a href="#marketplace" id="hl1">Marketplace</a>
@@ -80,27 +70,17 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p style={{
-            fontFamily: '"Space Mono", monospace',
-            fontWeight: '700',
-            fontSize: '22px',
-            color: '#FFFFFF'
-          }}>Join our weekly digest</p>
+          <p className="weekly">Join our weekly digest</p>
           <p>Get exclusive promotions & updates<br /> straight to your inbox.</p>
           <div className="inputWithButton-fo">
             <input
               type="email"
-              id="email"
+              id="email2"
               pattern=".+@example\.com"
               placeholder="Enter your email here"
               className="inputField-fo"
               required
-              style={{
-                fontFamily: "'Work Sans', sans-serif",
-                fontSize: "16px",
-                fontWeight: "600",
-              }}
-            />
+              />
             <Button
               text="Subscribe"
               w={211}
@@ -117,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="hr-p">
-        <p>Ⓒ All rights reserved, SAMI BARAT {2024}.</p>
+        <p>Ⓒ All rights reserved, SAMI BARAT 2024.</p>
       </div>
     </footer>
   );

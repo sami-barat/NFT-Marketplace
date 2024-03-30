@@ -29,7 +29,7 @@ const SubscribeWidget = () => {
                 fontSize: '16px',
                 fontWeight: '600'
               }}/>
-              <Button className="button-sub"
+              <Button 
                 text="Subscribe"
                 w={211}
                 h={60}
@@ -40,6 +40,8 @@ const SubscribeWidget = () => {
                 fz={16}
                 b={0}
                 brs={20}
+                gap={10}
+                p={5}
                 icon={<BiEnvelope size={20} color="#FFFFFF"/>}
               />
             </div>

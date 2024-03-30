@@ -25,9 +25,10 @@ const Highlight = () => {
           <div style={{ position: "relative" }}>
             <div className="avatarStyle">
               <img
+                className="avatar-high"
                 src={Avatar}
-                style={{ height: "24", width: "24px" }}
                 alt="Avatar"
+                
               />
               <p>Shroomie</p>
             </div>

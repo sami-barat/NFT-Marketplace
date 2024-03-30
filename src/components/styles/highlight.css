@@ -51,8 +51,13 @@
   font-weight: 400;
 }
 
+.high-nfts .avatarStyle .avatar-high {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (max-width: 900px) {
-  .container {
+  .high-nfts {
     padding: 0 20px;
     height: auto;
   }
