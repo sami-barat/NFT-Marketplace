@@ -5,7 +5,12 @@ import Photo from "../assets/images/Photo.png";
 import { BiEnvelope } from "react-icons/bi";
 import { Button } from "./button";
 
+
 const SubscribeWidget = () => {
+  const handleSubscribe = () => {
+    alert("Subscribed!");
+  };
+
   return (
     <>
       <div className="sub-w">
@@ -43,6 +48,7 @@ const SubscribeWidget = () => {
                 gap={10}
                 p={5}
                 icon={<BiEnvelope size={20} color="#FFFFFF"/>}
+                onClick={handleSubscribe}
               />
             </div>
           </div>
@@ -51,5 +57,7 @@ const SubscribeWidget = () => {
     </>
   );
 };
+
+
 
 export { SubscribeWidget };

@@ -1,7 +1,7 @@
 import "./styles/button.css"
 
 // eslint-disable-next-line react/prop-types
-const Button = ({color, bcolor, text, uppercase, p, m, fz, fw, icon, brs, gap, b, ff, h, w }) => {
+const Button = ({color, bcolor, text, uppercase, p, m, fz, fw, icon, brs, gap, b, ff, h, w, onClick }) => {
   return (
     <button style={{
       gap: gap ? gap : "15px",
@@ -21,6 +21,7 @@ const Button = ({color, bcolor, text, uppercase, p, m, fz, fw, icon, brs, gap, b
       height: h,
       width: w
     }}
+    onClick={onClick}
     >
       {icon}
       {text}

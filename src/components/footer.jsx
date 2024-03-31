@@ -27,6 +27,10 @@ const Footer = () => {
     window.open("https://www.instagram.com", "_blank");
   };
 
+  const handleSubscribe = () => {
+    alert("Subscribed!");
+  };
+
   return (
     <footer>
       <div className="footer-sec container">
@@ -92,6 +96,7 @@ const Footer = () => {
               fz={16}
               b={0}
               brs={20}
+              onClick={handleSubscribe}
             />
           </div>
         </div>
