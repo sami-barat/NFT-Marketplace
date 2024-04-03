@@ -13,35 +13,23 @@ const Navbar = () => {
       id: "hl1",
       to: "market_place",
       text: "Marketplace",
-      active: true,
     },
     {
       id: "hl2",
       to: "rankings",
       text: "Rankings",
-      active: false,
     },
     {
       id: "hl3",
       to: "connect_a_wallet",
       text: "Connect a wallet",
-      active: false,
     },
   ];
 
   const [headerLinks, setHeaderLinks] = useState(headerLinksFromStorage);
-  const [activeLinkId, setActiveLinkId] = useState(headerLinks[0].id);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  useEffect(() => {
-    const newHeaderLinks = headerLinks.map((item) => {
-      return {
-        ...item,
-        active: item.id === activeLinkId, 
-      };
-    });
-    setHeaderLinks(newHeaderLinks);
-  }, [activeLinkId]);
+
 
   return (
     <header className="header">
@@ -56,10 +44,10 @@ const Navbar = () => {
           <ul className={`link_list ${sidebarOpen ? "sidebar_open" : ""}`}>
             {headerLinks.map((link) => (
               <li
-                className={`link_list_item ${link.active ? "active_link" : ""}`}
+                className="link_list_item"
                 key={link.id}
               >
-                <a href="#" onClick={(e) => { e.preventDefault(); setActiveLinkId(link.id); }}>{link.text}</a>
+                <a href="#">{link.text}</a>
               </li>
             ))}
             <Button
